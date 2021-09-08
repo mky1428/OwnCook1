@@ -1,0 +1,2 @@
+rootProject.name = "OwnCook1"
+include ':app'
