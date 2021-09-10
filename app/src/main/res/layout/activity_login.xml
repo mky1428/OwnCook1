@@ -71,13 +71,47 @@
         />
 
     <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/kakaologin"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_below="@id/btn_login"
         android:src="@drawable/kakao_login_medium_wide"
         android:layout_alignLeft="@id/et_id"
         android:layout_marginTop="8dp"
+        android:onClick="clickKakaoLogin"
         />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kakaologin"
+        android:layout_alignLeft="@id/kakaologin"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/loginbutton_google"
+        android:onClick="clickGoogleLogin">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/btn_google_light_normal"
+            android:layout_marginLeft="6dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="구글 로그인"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="85dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
 
 </RelativeLayout>
 
