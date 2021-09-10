@@ -91,9 +91,9 @@
         android:onClick="clickGoogleLogin">
 
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@drawable/btn_google_light_normal"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/btn_google_light_normal_ldpi"
             android:layout_marginLeft="6dp"
             />
 
