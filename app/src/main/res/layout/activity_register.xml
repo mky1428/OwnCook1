@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/mainimage"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OwnCook"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv"
+        android:text="아이디"
+        android:textColor="#ff333333"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edittext"
+        android:layout_toRightOf="@id/tv_id"
+        android:layout_below="@id/iv"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="80dp"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_id"
+        android:text="비밀번호"
+        android:textColor="#ff333333"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edittext"
+        android:layout_toRightOf="@id/tv_id"
+        android:layout_below="@id/et_id"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="80dp"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:id="@+id/tv_password2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_password"
+        android:text="비밀번호확인"
+        android:textColor="#ff333333"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:id="@+id/et_password2"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edittext"
+        android:layout_toRightOf="@id/tv_id"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="80dp"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:id="@+id/tv_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_password2"
+        android:text="휴대폰"
+        android:textColor="#ff333333"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:id="@+id/et_hp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edittext"
+        android:layout_toRightOf="@id/tv_id"
+        android:layout_below="@id/et_password2"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인증번호받기"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/et_password2"
+        android:layout_toRightOf="@id/et_hp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+</RelativeLayout>

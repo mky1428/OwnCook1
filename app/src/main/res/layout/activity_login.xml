@@ -68,6 +68,7 @@
         android:backgroundTint="@color/black"
         android:layout_below="@id/et_password"
         android:layout_alignRight="@id/et_password"
+        android:onClick="clickRegister"
         />
 
     <androidx.constraintlayout.utils.widget.ImageFilterButton
