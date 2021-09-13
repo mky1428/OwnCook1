@@ -21,4 +21,5 @@ public class MainActivity extends AppCompatActivity {
         myFragment2 = (MyFragment2) fragmentManager.findFragmentById(R.id.frag2);
 
     }
+
 }
