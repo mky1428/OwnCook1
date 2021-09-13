@@ -25,5 +25,9 @@ public class LoginActivity extends AppCompatActivity {
     public void clickGoogleLogin(View view) {
     }
 
+    public void clickStart(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 
 }
