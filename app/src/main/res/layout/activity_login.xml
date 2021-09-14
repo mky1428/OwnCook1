@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/mainimage"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OwnCook"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv"
+        android:hint="아이디"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_id"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/et_password"
+        android:layout_alignLeft="@id/et_password"
+        />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/et_password"
+        android:layout_alignRight="@id/et_password"
+        android:onClick="clickRegister"
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/kakaologin"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/btn_login"
+        android:src="@drawable/kakao_login_medium_wide"
+        android:layout_alignLeft="@id/et_id"
+        android:layout_marginTop="8dp"
+        android:onClick="clickKakaoLogin"
+        />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kakaologin"
+        android:layout_alignLeft="@id/kakaologin"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/loginbutton_google"
+        android:onClick="clickGoogleLogin">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/btn_google_light_normal_ldpi"
+            android:layout_marginLeft="6dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="구글 로그인"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="85dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Let's Cook!"
+        android:textAllCaps="false"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="230dp"
+        android:onClick="clickStart"
+        />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
