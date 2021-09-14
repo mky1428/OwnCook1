@@ -1,5 +1,6 @@
 package com.mky1428.owncook1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,14 +29,16 @@ public class MyFragment1 extends Fragment {
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //액티비티이동
+                Intent intent = new Intent(getActivity(), RecMenuTypeActivity.class);
+                startActivity(intent);
             }
         });
 
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //액티비티 이동
+                Intent intent = new Intent(getActivity(), RecMenuTypeActivity.class);
+                startActivity(intent);
             }
         });
 

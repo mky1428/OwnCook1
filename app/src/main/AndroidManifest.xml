@@ -10,13 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OwnCook1">
         <activity
-            android:name=".RegisterActivity"
+            android:name=".RecMenuTypeActivity"
             android:theme="@style/IntroActivityTheme"/>
-
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/IntroActivityTheme" />
         <activity
             android:name=".LoginActivity"
             android:theme="@style/IntroActivityTheme" />
-
         <activity
             android:name=".IntroActivity"
             android:theme="@style/IntroActivityTheme">
@@ -26,11 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
-            android:theme="@style/IntroActivityTheme"/>
-
+            android:theme="@style/IntroActivityTheme" />
     </application>
 
 </manifest>
