@@ -19,6 +19,12 @@ public class RecAdapter extends RecyclerView.Adapter {
     Context context;
     ArrayList<RecItem> items;
 
+    public RecAdapter(Context context, ArrayList<RecItem> items) {
+        this.context = context;
+        this.items = items;
+    }
+
+
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
