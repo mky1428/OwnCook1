@@ -7,6 +7,9 @@ import android.view.View;
 
 public class RecMenuSelectActivity extends AppCompatActivity {
 
+    //인증키 : d0dd9f7df5014307a705
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메뉴명"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#ff333333"
+        android:textSize="20sp"
+        android:layout_marginTop="4dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="재료정보"
+        android:textColor="#ff333333"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="재료~~~"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="만드는법"
+        android:textColor="#ff333333"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_manual1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="과정~~~"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+
+
+
+</LinearLayout>
