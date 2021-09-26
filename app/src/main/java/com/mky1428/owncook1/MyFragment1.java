@@ -29,7 +29,7 @@ public class MyFragment1 extends Fragment {
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), RecMenuTypeActivity.class);
+                Intent intent = new Intent(getActivity(), RecMenuSelectActivity.class);
                 startActivity(intent);
             }
         });
@@ -37,7 +37,7 @@ public class MyFragment1 extends Fragment {
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), RecMenuTypeActivity.class);
+                Intent intent = new Intent(getActivity(), RecMenuSelectActivity.class);
                 startActivity(intent);
             }
         });
