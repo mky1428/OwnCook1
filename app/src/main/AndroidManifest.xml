@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OwnCook1"
+        android:name=".CustomApplication"
         android:usesCleartextTraffic="true">
         <activity
             android:name=".RecMenuSelectActivity"
@@ -34,9 +35,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".MainActivity"
             android:theme="@style/IntroActivityTheme" />
+
+        <meta-data
+            android:name="com.kakao.sdk.network.AppKey"
+            android:value="4a7a8a91dec17ba6c45db90245306300"/>
+
     </application>
 
 </manifest>

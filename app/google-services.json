@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "15379593039",
+    "project_id": "owncook1",
+    "storage_bucket": "owncook1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15379593039:android:93e98c710b47d049a0f73a",
+        "android_client_info": {
+          "package_name": "com.mky1428.owncook1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15379593039-l0jnukshvjqh383gnr0kaoco8s5m42dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaJL0xLIfH444L12EPXFCVlB--3na7Nc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15379593039-l0jnukshvjqh383gnr0kaoco8s5m42dk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
