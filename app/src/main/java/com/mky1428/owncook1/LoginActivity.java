@@ -22,6 +22,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.kakao.sdk.auth.model.OAuthToken;
 import com.kakao.sdk.user.UserApiClient;
+import com.kakao.sdk.user.model.User;
 
 import java.security.MessageDigest;
 
@@ -58,8 +59,26 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public Unit invoke(OAuthToken oAuthToken, Throwable throwable) {
 
-                if (oAuthToken != null)
+                if (oAuthToken != null){
                     Toast.makeText(LoginActivity.this, "로그인 성공", Toast.LENGTH_SHORT).show();
+
+                    UserApiClient.getInstance().me(new Function2<User, Throwable, Unit>() {
+                        @Override
+                        public Unit invoke(User user, Throwable throwable) {
+
+                            if (user != null){
+                                G.id = user.getId();
+                                G.nickname = user.getKakaoAccount().getProfile().getNickname();
+                                G.profileUrl = user.getKakaoAccount().getProfile().getProfileImageUrl();
+                            }
+
+                            return null;
+                        }
+                    });
+
+                }else{
+                    Toast.makeText(LoginActivity.this, "로그인 실패", Toast.LENGTH_SHORT).show();
+                }
 
                 return null;
             }

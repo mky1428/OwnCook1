@@ -20,12 +20,15 @@
         <activity
             android:name=".RecMenuTypeActivity"
             android:theme="@style/IntroActivityTheme" />
+
         <activity
             android:name=".RegisterActivity"
             android:theme="@style/IntroActivityTheme" />
+
         <activity
             android:name=".LoginActivity"
             android:theme="@style/IntroActivityTheme" />
+
         <activity
             android:name=".IntroActivity"
             android:theme="@style/IntroActivityTheme">
@@ -38,7 +41,20 @@
 
         <activity
             android:name=".MainActivity"
-            android:theme="@style/IntroActivityTheme" />
+            android:theme="@style/Theme.OwnCook1" />
+
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao4a7a8a91dec17ba6c45db90245306300" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="com.kakao.sdk.network.AppKey"
