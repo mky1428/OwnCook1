@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         myFragment1 = (MyFragment1) fragmentManager.findFragmentById(R.id.frag1);
         myFragment2 = (MyFragment2) fragmentManager.findFragmentById(R.id.frag2);
 
-
+        
         getSupportActionBar().setTitle(G.nickname + " 님");
         getSupportActionBar().setSubtitle("환영합니다");
 
