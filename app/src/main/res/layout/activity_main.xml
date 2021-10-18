@@ -63,6 +63,7 @@
         android:backgroundTint="@color/white"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:onClick="clickMyrecipe"
         />
     
     <com.google.android.material.bottomnavigation.BottomNavigationView
