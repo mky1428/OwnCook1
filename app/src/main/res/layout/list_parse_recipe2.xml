@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    android:elevation="32dp"
+    android:layout_margin="8dp"
+    app:strokeWidth="3dp"
+    app:strokeColor="#3E000000"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메뉴명~~"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#ff333333"
+            android:textSize="20sp"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="재료정보"
+            android:textColor="#ff333333"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_ingredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="재료~~~"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="만드는법"
+            android:textColor="#ff333333"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="과정~~~"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_pin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_push_pin_24"
+                android:background="#54333333"
+                android:layout_marginLeft="60dp"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_chat"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_chat_bubble_24"
+                android:background="#54333333"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="스크랩"
+                android:layout_below="@id/iv_pin"
+                android:textSize="18sp"
+                android:textColor="#ff333333"
+                android:textStyle="bold"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="요리후기"
+                android:layout_below="@id/iv_chat"
+                android:textSize="18sp"
+                android:textColor="#ff333333"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="190dp"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내 주변 마트 찾아보기"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/black"
+            />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

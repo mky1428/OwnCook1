@@ -32,25 +32,12 @@
         android:layout_below="@id/iv"
         android:padding="40dp"
         android:layout_marginTop="50dp"
+        android:gravity="center"
         >
         
-        <fragment
-            android:id="@+id/frag1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:layout="@layout/fragment1_my"
-            android:name="com.mky1428.owncook1.MyFragment1"
-            android:layout_marginLeft="10dp"
-            />
+        <include layout="@layout/fragment1_my"/>
 
-        <fragment
-            android:id="@+id/frag2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:layout="@layout/fragment2_my"
-            android:name="com.mky1428.owncook1.MyFragment2"
-            android:layout_marginLeft="60dp"
-            />
+        <include layout="@layout/fragment2_my"/>
         
     </LinearLayout>
 

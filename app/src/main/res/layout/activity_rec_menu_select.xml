@@ -8,24 +8,12 @@
     android:padding="16dp"
     tools:context=".RecMenuSelectActivity">
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="레시피 확인하기!"
-        android:backgroundTint="@color/black"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal"
-        android:onClick="clickParse"
-        />
-
-    <ListView
-        android:id="@+id/listview"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecMenuSelect_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/list_parse_recipe"
-        />
-
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/list_parse_recipe2"/>
 
 </LinearLayout>

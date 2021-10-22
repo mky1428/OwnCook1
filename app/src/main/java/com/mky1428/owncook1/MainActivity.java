@@ -6,21 +6,15 @@ import androidx.fragment.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
-    MyFragment1 myFragment1;
-    MyFragment2 myFragment2;
-    FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fragmentManager = getSupportFragmentManager();
-        myFragment1 = (MyFragment1) fragmentManager.findFragmentById(R.id.frag1);
-        myFragment2 = (MyFragment2) fragmentManager.findFragmentById(R.id.frag2);
 
         
         getSupportActionBar().setTitle(G.nickname + " 님");
@@ -32,4 +26,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MyRecipeActivity.class);
         startActivity(intent);
     }
+
+    public void clickRecRecipe(View view){
+        Intent intent= new Intent(this, RecMenuSelectActivity.class);
+        startActivity(intent);
+    }
+
 }
