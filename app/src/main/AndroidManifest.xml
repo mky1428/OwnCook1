@@ -3,6 +3,8 @@
     package="com.mky1428.owncook1">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
 
     <application
         android:name=".CustomApplication"
@@ -13,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OwnCook1"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".EntRecipeListActivity"
+            android:theme="@style/Theme.OwnCook1"/>
         <activity
             android:name=".MyRecipeActivity"
             android:theme="@style/IntroActivityTheme" />

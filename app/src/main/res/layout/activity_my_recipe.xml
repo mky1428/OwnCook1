@@ -29,6 +29,7 @@
                 />
 
             <EditText
+                android:id="@+id/et_RecipeName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="  예) 맛있는 미역국 끓이기"
@@ -43,11 +44,12 @@
                 android:layout_height="220dp">
 
                 <ImageView
-                    android:id="@+id/iv"
+                    android:id="@+id/iv_MainImage"
                     android:layout_width="match_parent"
                     android:layout_height="220dp"
                     android:background="#70333333"
                     android:src="@drawable/ic_baseline_photo_camera3_24"
+                    android:onClick="clickSelectMainImage"
                     />
 
                 <TextView
@@ -80,6 +82,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/et_IngredientName1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="   예) 소고기"
@@ -92,6 +95,7 @@
                     />
 
                 <EditText
+                    android:id="@+id/et_IngredientVolume1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="예) 300g   "
@@ -120,6 +124,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/et_IngredientName2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="   예) 미역"
@@ -132,6 +137,7 @@
                     />
 
                 <EditText
+                    android:id="@+id/et_IngredientVolume2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="예) 30g   "
@@ -160,6 +166,7 @@
                 android:orientation="horizontal">
 
                 <EditText
+                    android:id="@+id/et_IngredientName3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="   예) 다진마늘"
@@ -172,6 +179,91 @@
                     />
 
                 <EditText
+                    android:id="@+id/et_IngredientVolume3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="예) 1T   "
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#57000000"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_IngredientName4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="   예) 다진마늘"
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_IngredientVolume4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="예) 1T   "
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#57000000"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_IngredientName5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="   예) 다진마늘"
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_IngredientVolume5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="예) 1T   "
@@ -244,6 +336,7 @@
                 android:padding="8dp">
 
                 <EditText
+                    android:id="@+id/et_Manual1"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:hint="예) 미역을 물 500ml에 10분간 불려주세요"
@@ -257,9 +350,11 @@
                     />
 
                 <ImageView
+                    android:id="@+id/iv_ManualImage1"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/logoimage"
+                    android:onClick="clickSelectManualImage"
                     />
 
             </LinearLayout>
@@ -279,6 +374,7 @@
                 android:padding="8dp">
 
                 <EditText
+                    android:id="@+id/et_Manual2"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:hint="예) 미역을 물 500ml에 10분간 불려주세요"
@@ -292,9 +388,11 @@
                     />
 
                 <ImageView
+                    android:id="@+id/iv_ManualImage2"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/logoimage"
+                    android:onClick="clickSelectManualImage"
                     />
 
             </LinearLayout>
@@ -314,6 +412,7 @@
                 android:padding="8dp">
 
                 <EditText
+                    android:id="@+id/et_Manual3"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:hint="예) 미역을 물 500ml에 10분간 불려주세요"
@@ -327,9 +426,87 @@
                     />
 
                 <ImageView
+                    android:id="@+id/iv_ManualImage3"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/logoimage"
+                    android:onClick="clickSelectManualImage"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#57000000"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <EditText
+                    android:id="@+id/et_Manual4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="예) 미역을 물 500ml에 10분간 불려주세요"
+                    android:background="@android:color/transparent"
+                    android:inputType="textMultiLine"
+                    android:textSize="16sp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:layout_marginRight="8dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_ManualImage4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logoimage"
+                    android:onClick="clickSelectManualImage"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#57000000"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <EditText
+                    android:id="@+id/et_Manual5"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="예) 미역을 물 500ml에 10분간 불려주세요"
+                    android:background="@android:color/transparent"
+                    android:inputType="textMultiLine"
+                    android:textSize="16sp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:layout_marginRight="8dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_ManualImage5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logoimage"
+                    android:onClick="clickSelectManualImage"
                     />
 
             </LinearLayout>

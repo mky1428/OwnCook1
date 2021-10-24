@@ -32,4 +32,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void clickEntRecipe(View view){
+        Intent intent = new Intent(this, EntRecipeListActivity.class);
+        startActivity(intent);
+    }
+
 }
