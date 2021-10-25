@@ -189,6 +189,8 @@ public class MyRecipeActivity extends AppCompatActivity {
 
         Retrofit retrofit = RetrofitHelper.getRetrofitInstanceScalars();
 
+        RetrofitService retrofitService = retrofit.create(RetrofitService.class);
+
 
     }
 }
