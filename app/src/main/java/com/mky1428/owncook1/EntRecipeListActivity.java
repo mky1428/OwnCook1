@@ -14,5 +14,6 @@ public class EntRecipeListActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("모두의레시피");
 
 
+
     }
 }
